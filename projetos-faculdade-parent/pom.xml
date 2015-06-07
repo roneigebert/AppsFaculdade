@@ -12,6 +12,7 @@
 	<modules>
 		<module>binary-converters</module>
 		<module>labirinto-console</module>
+		<module>metodos-ordenadores</module>
 	</modules>
 
 	<dependencies>
