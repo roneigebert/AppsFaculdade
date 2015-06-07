@@ -2,10 +2,10 @@ package com.appsfaculdade.labirinto.utils;
 
 public class Utils {
 	
-	public static void sleep(int m) {
+	public static void sleep(final int millis) {
 		try {
-			Thread.sleep(m);
-		} catch (InterruptedException ex) {
+			Thread.sleep(millis);
+		} catch (final InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
 	}
