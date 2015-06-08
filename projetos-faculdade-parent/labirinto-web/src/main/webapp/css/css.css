@@ -1,0 +1,365 @@
+input {
+	max-width: 335px;
+}
+
+.cell{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+}
+
+.c{
+	background:url( '../img/queijo.gif' ) -5px 2px;
+	background-repeat: no-repeat;
+	background-size: 42px;
+}
+
+.a{
+	background:url( '../img/ratoeira.gif' ) -5px 2px;
+	background-repeat: no-repeat;
+	background-size: 42px;
+}
+
+.l{
+	background-image:url( '../img/parede.jpg' );
+	background-repeat: no-repeat;
+	background-size: 42px;
+}
+
+/* BEGIN LEFT */
+.r_left_1{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) 0 0;
+}
+
+.r_left_2{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -32px 0;
+}
+
+.r_left_3{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -64px 0;
+}
+
+.r_left_4{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -96px 0;
+}
+
+.rr_left_1{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) 0 0;
+}
+
+.rr_left_2{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -32px 0;
+}
+
+.rr_left_3{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -64px 0;
+}
+
+.rr_left_4{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -96px 0;
+}
+/* END LEFT */
+
+/* BEGIN RIGHT */
+.r_right_1{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) 0 -64px;
+}
+
+.r_right_2{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -32px -64px;
+}
+
+.r_right_3{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -64px -64px;
+}
+
+.r_right_4{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -96px -64px;
+}
+
+.rr_right_1{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) 0 -64px;
+}
+
+.rr_right_2{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -32px -64px;
+}
+
+.rr_right_3{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -64px -64px;
+}
+
+.rr_right_4{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -96px -64px;
+}
+/* END RIGHT */
+
+/* BEGIN TOP */
+.r_top_1{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) 0 -224px;
+}
+
+.r_top_2{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -32px -224px;
+}
+
+.r_top_3{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -64px -224px;
+}
+
+.r_top_4{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -96px -224px;
+}
+
+.rr_top_1{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) 0 -224px;
+}
+
+.rr_top_2{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -32px -224px;
+}
+
+.rr_top_3{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -64px -224px;
+}
+
+.rr_top_4{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -96px -224px;
+}
+/* END TOP */
+
+/* BEGIN BOTTOM */
+.r_bottom_1{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) 0 -32px;
+}
+
+.r_bottom_2{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -32px -32px;
+}
+
+.r_bottom_3{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -64px -32px;
+}
+
+.r_bottom_4{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato.png' ) -96px -32px;
+}
+
+.rr_bottom_1{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) 0 -32px;
+}
+
+.rr_bottom_2{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -32px -32px;
+}
+
+.rr_bottom_3{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -64px -32px;
+}
+
+.rr_bottom_4{
+	width:32px;
+	height:32px;
+	background:url( '../img/rato_red.png' ) -96px -32px;
+}
+/* END BOTTOM */
+
+
+/* CAT */
+
+.c_1{ 
+	width:104px;
+	height:70px;
+	background:url( '../img/gato.gif' ) 0 0;
+}
+
+.c_2{
+	width:104px;
+	height:70px;
+	background:url( '../img/gato.gif' ) -104px 0;
+}
+
+.c_3{
+	width:104px;
+	height:70px;
+	background:url( '../img/gato.gif' ) -210px 0;
+}
+
+.c_4{
+	width:104px;
+	height:70px;
+	background:url( '../img/gato.gif' ) -316px 0;
+}
+
+.c_5{
+	width:104px;
+	height:70px;
+	background:url( '../img/gato.gif' ) -422px 0;
+}
+
+.c_6{
+	width:104px;
+	height:70px;
+	background:url( '../img/gato.gif' ) -528px 0;
+}
+/*END CAT*/
+
+/* EXPLOSION */
+
+.e_1{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) 0 0;
+}
+
+.e_2{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -96px 0;
+}
+
+.e_3{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -192px 0;
+}
+
+.e_4{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -288px 0;
+}
+
+.e_5{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -384px 0;
+}
+
+.e_6{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -480px 0;
+}
+
+.e_7{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -576px 0;
+}
+
+.e_8{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -672px 0;
+}
+
+.e_9{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -758px 0;
+}
+
+.e_10{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -864px 0;
+}
+
+.e_11{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -960px 0;
+}
+
+.e_12{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -1056px 0;
+}
+
+.e_13{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -1152px 0;
+}
+
+.e_14{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -1248px 0;
+}
+
+.e_15{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -1344px 0;
+}
+
+.e_16{ 
+	width:96px;
+	height:96px;
+	background:url( '../img/explosao.png' ) -1440px 0;
+}
