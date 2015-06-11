@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class CreateRelatorioTest {
@@ -18,6 +19,7 @@ public class CreateRelatorioTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testCreateRelatorio() throws Exception{
 		geradorRelatorio.gerarRelatorio();
 		Assert.assertTrue(new File(outputDir).exists());

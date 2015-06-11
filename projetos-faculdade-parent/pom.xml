@@ -14,6 +14,7 @@
 		<module>labirinto-console</module>
 		<module>metodos-ordenadores</module>
 		<module>labirinto-web</module>
+		<module>aeroporto-project</module>
 	</modules>
 
 	<dependencies>
