@@ -16,6 +16,7 @@
 		<module>labirinto-web</module>
 		<module>aeroporto-project</module>
 		<module>socket-chat</module>
+		<module>cafeteira-decorator</module>
 	</modules>
 
 	<dependencies>
