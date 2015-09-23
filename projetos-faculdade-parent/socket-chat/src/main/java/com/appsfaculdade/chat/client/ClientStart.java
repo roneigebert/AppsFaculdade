@@ -22,7 +22,7 @@ public class ClientStart {
 	}
 
 	private static void startClient() throws Exception {
-		val socket = new Socket(Constants.SERVER_HOST, Constants.SERVER_PORT);
+		val socket = new Socket(Constants.getHost(), Constants.SERVER_PORT);
 		val output = new PrintStream(socket.getOutputStream());
 		val keyboard = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("What's your name? \n>> ");
