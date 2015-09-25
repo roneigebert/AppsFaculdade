@@ -1,9 +1,9 @@
 package com.cafeteira;
 
 
-public class Pimenta extends CafeDecorator {
+public class Acucar extends CafeDecorator {
 
-	public Pimenta(Cafe cafe) {
+	public Acucar(Cafe cafe) {
 		super(cafe);
 	}
 
