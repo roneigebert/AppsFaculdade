@@ -1,4 +1,4 @@
-package com.cafeteira;
+package com.cafeteira.cafe;
 
 
 public class Acucar extends CafeDecorator {
@@ -9,13 +9,13 @@ public class Acucar extends CafeDecorator {
 
 	@Override
 	public void preparar() {
-		System.out.println("Preparando café com primenta");
+		System.out.println("Preparando café com acucar");
 		super.preparar();
 	}
 	
 	@Override
 	public int getPreco() {
-		return 5 + super.getPreco();
+		return 50 + super.getPreco();
 	}
 
 }

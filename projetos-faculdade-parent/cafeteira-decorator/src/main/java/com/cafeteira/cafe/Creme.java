@@ -1,4 +1,4 @@
-package com.cafeteira;
+package com.cafeteira.cafe;
 
 public class Creme extends CafeDecorator {
 
@@ -14,7 +14,7 @@ public class Creme extends CafeDecorator {
 
 	@Override
 	public int getPreco() {
-		return 1 + super.getPreco();
+		return 100 + super.getPreco();
 	}
 
 }

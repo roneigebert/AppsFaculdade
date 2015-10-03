@@ -1,4 +1,4 @@
-package com.cafeteira;
+package com.cafeteira.cafe;
 
 import lombok.AllArgsConstructor;
 import lombok.experimental.Delegate;

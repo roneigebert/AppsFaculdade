@@ -1,4 +1,4 @@
-package com.cafeteira;
+package com.cafeteira.cafe;
 
 public class Preto extends Cafe {
 
@@ -9,7 +9,7 @@ public class Preto extends Cafe {
 
 	@Override
 	public int getPreco() {
-		return 3;
+		return 175;
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.cafeteira;
+package com.cafeteira.cafe;
 
 public class CremeAcucar extends CafeDecorator {
 
