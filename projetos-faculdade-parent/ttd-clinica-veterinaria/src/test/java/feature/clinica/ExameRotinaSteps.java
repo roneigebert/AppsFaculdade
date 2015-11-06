@@ -41,7 +41,7 @@ public class ExameRotinaSteps {
 	@Then("Dave paga em (.*) antes de ele sair para o trabalho e lhe é fornecido um recibo de pagamento para os serviços.")
 	public void pagaEmDinheiroERecebeRecibo( final String formaPagamentoStr ){
 		final FormaPagamento formaPagamento = FormaPagamento.from(formaPagamentoStr);
-		final Recibo recibo = fatura.efetuarPagamento( formaPagamento );
+		final Recibo recibo = fatura.quitar( formaPagamento );
 		Assert.assertNotNull( recibo );
 		Assert.assertEquals( cliente, recibo.getCliente() );
 		Assert.assertEquals( fatura, recibo.getFatura() );

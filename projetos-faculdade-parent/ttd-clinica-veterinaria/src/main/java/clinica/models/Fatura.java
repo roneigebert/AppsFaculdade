@@ -17,7 +17,7 @@ public class Fatura {
 		itens.add( item );
 	}
 	
-	public Recibo efetuarPagamento( final FormaPagamento formaPagamento ){
+	public Recibo quitar( final FormaPagamento formaPagamento ){
 		if ( this.recibo != null )
 			throw new IllegalArgumentException( "Fatura já está quitado, não é possível pagar 2 vezes!" );
 		this.formaPagamento = formaPagamento;
@@ -27,11 +27,15 @@ public class Fatura {
 		return this.recibo;
 	}
 	
+	public boolean estaQuitada(){
+		return recibo != null;
+	}
+	
 	public double total(){
 		double valor = 0D;
 		for ( final ItemFatura item : itens )
 			valor += item.getValor();
 		return valor;
 	}
-	
+
 }
