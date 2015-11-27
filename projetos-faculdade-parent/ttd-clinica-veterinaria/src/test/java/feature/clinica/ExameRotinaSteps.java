@@ -1,5 +1,9 @@
 package feature.clinica;
 
+import java.util.ArrayList;
+
+import lombok.val;
+
 import org.junit.Assert;
 
 import clinica.models.Cliente;
@@ -17,17 +21,16 @@ public class ExameRotinaSteps {
 	
 	@Given("(.*) traz seu Doberman de estimação chamado Fofo na clínica para exames de rotina")
 	public void entrarClinica( String nomeCliente ){
-		cliente = new Cliente();
-		cliente.setNome( nomeCliente );
+		cliente = new Cliente( nomeCliente );
 	}
 	
 	@Then("O veterinário cobra dele a (.*) e a (.*), que custam (\\d+) e (\\d+) reais, respectivamente.")
 	public void cobrarConsultaEVacina( String nomeItem1, String nomeItem2, double valorItem1, double valorItem2  )
 	{
-		fatura = new Fatura();
-		fatura.setCliente( cliente );
-		fatura.add( criarItem(nomeItem1, valorItem1) );
-		fatura.add( criarItem(nomeItem2, valorItem2) );
+		val itens = new ArrayList<ItemFatura>();
+		itens.add( criarItem(nomeItem1, valorItem1) );
+		itens.add( criarItem(nomeItem2, valorItem2) );
+		fatura = new Fatura( cliente, itens );
 		Assert.assertEquals(valorItem1 + valorItem2, fatura.total(), 0);
 	}
 	

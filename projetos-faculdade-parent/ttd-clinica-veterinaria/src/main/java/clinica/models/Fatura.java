@@ -1,6 +1,5 @@
 package clinica.models;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Data;
@@ -8,13 +7,17 @@ import lombok.Data;
 @Data
 public class Fatura {
 
-	private List<ItemFatura> itens = new ArrayList<>();
-	private Cliente cliente;
+	private final List<ItemFatura> itens;
+	private final Cliente cliente;
+	private final List<PartePagamento> partes;
+	
 	private FormaPagamento formaPagamento;
 	public Recibo recibo;
 	
-	public void add( final ItemFatura item ){
-		itens.add( item );
+	public Fatura( final Cliente cliente, final List<ItemFatura> itens ) {
+		this.itens = itens;
+		this.cliente = cliente;
+		this.partes = cliente.gerarPartesPagamento( this );
 	}
 	
 	public Recibo quitar( final FormaPagamento formaPagamento ){

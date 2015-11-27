@@ -1,5 +1,6 @@
 package feature.clinica;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -22,15 +23,12 @@ public class PagamentoBoletoSteps {
 	
 	@Given("(.*) traz seus dois gatos, Tweedle Dee e Tweedle Dum, para serem castrados.")
 	public void entrarClinica( String nomeCliente ){
-		cliente = new Cliente();
-		cliente.setNome( nomeCliente );
+		cliente = new Cliente( nomeCliente );
 	}
 	
 	@And("Dr. Roberts realiza as esterilizações \\(que tem uma taxa normal\\).")
 	public void efetuarProcedimentoMedico(){
-		fatura = new Fatura();
-		fatura.setCliente( cliente );
-		fatura.add( new ItemFatura("Esterilizações", 50D) );
+		fatura = new Fatura( cliente, Arrays.asList(new ItemFatura("Esterilizações", 50D)) );
 		Assert.assertFalse( fatura.estaQuitada() );
 	}
 	
